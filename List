@@ -7,9 +7,14 @@ if __name__ == '__main__':
      if(query[0]=="print"):
       print(new_list)
      elif (query[0]=="sort"):
-       new_list.sort()
+         new_list.sort()
      elif (query[0]=="pop"):
          new_list.pop()
      elif (query[0]=="reverse"):
          new_list.reverse()
-     
+     elif (query[0]=="insert"):
+          new_list.insert(int(query[1]),int(query[2]))
+     elif (query[0]=="append"):
+         new_list.append(int(query[1]))
+     elif (query[0]=="remove"):
+          new_list.remove(int(query[1]))
